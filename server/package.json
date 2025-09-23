@@ -1,0 +1,27 @@
+{
+  "name": "think-board",
+  "version": "1.0.0",
+  "description": "Full-Stack App Built with the MERN Stack (MongoDB, Express, React, Node)",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunilDoss/ThinkBoard-MERN.git"
+  },
+  "type": "module",
+  "author": "SunilDoss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunilDoss/ThinkBoard-MERN/issues"
+  },
+  "homepage": "https://github.com/SunilDoss/ThinkBoard-MERN#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
