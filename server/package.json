@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/SunilDoss/ThinkBoard-MERN#readme",
   "dependencies": {
-    "express": "^4.21.2"
+    "dotenv": "^17.2.2",
+    "express": "^4.21.2",
+    "mongoose": "^8.18.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
