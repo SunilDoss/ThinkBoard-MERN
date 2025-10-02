@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/SunilDoss/ThinkBoard-MERN#readme",
   "dependencies": {
-    "dotenv": "^17.2.2",
+    "@upstash/ratelimit": "^2.0.6",
+    "@upstash/redis": "^1.35.4",
+    "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "mongoose": "^8.18.2"
   },

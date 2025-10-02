@@ -11,6 +11,10 @@ const noteSchema = new mongoose.Schema({
     },
 },{timestamps:true});
 
+mongoose.connection.once("open", () => {
+  console.log("MongoDB connected:", mongoose.connection.name); // prints which DB you're connected to
+});
+
 const Note = mongoose.model('Note',noteSchema);
 
 export default Note;

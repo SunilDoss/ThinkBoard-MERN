@@ -4,10 +4,23 @@
 import Note from '../models/Note.js';
 
 // Get all notes
-async function getAllNotes (req,res) {
+async function getAllNotes (_,res) {
     try {
-        const notes = await Note.find();
-        res.status('200').json(notes);
+        const notes = await Note.find().sort({createdAt: -1});
+        res.status(200).json(notes);
+    } catch (error) {
+        res.status('500').json({message: "Error fetching notes", error: error.message});
+    }
+}
+
+// Get notes by id
+async function getNotesById (req,res) {
+    try {
+        const notes = await Note.findById(req.params.id);
+         if(!notes){
+            return res.status('404').json({message: "Note not found"});
+         }
+        res.status(200).json(notes);
     } catch (error) {
         res.status('500').json({message: "Error fetching notes", error: error.message});
     }
@@ -53,4 +66,4 @@ async function deleteNotes (req,res) {
 }
 
 // Exporting the controller functions
-export { getAllNotes, createNote, updateNotes, deleteNotes };
+export { getAllNotes, createNote, updateNotes, deleteNotes, getNotesById };
