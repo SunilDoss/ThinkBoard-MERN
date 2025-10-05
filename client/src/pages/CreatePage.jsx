@@ -1,8 +1,13 @@
+import { useState } from "react";
 
 const CreatePage = () => {
-    return <div>
-        CreatePage
-    </div>
+   const [title,setTitle]     = useState("");
+   const [content,setcontent] = useState("");
+   const [loading,setloading] = useState(false);
+
+   const handleNoteSubmit = () => {
+    
+   }
 }
 
 export default CreatePage;
