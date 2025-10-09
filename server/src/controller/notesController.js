@@ -20,6 +20,8 @@ async function getNotesById (req,res) {
          if(!notes){
             return res.status('404').json({message: "Note not found"});
          }
+         console.log(notes);
+         
         res.status(200).json(notes);
     } catch (error) {
         res.status('500').json({message: "Error fetching notes", error: error.message});

@@ -63,7 +63,7 @@ const CreatePage = () => {
                                 <span className="label-text">Content</span>
                             </label>
                             <textarea placeholder="Enter Note Content" 
-                                className="input input-bordered" value={content}
+                                className="input input-bordered h-32" value={content}
                                 onChange={(e) => setcontent(e.target.value)}/>
                         </div>
                         <div className="card-actions justify-end">

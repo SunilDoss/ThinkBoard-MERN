@@ -2,7 +2,10 @@ import { Route, Routes } from "react-router";
 import HomePage from "./pages/HomePage";
 import CreatePage from "./pages/CreatePage";
 import NoteDetailPage from "./pages/NoteDetailPage";
+import axios from "axios";
 
+//Local Base API URL
+axios.defaults.baseURL = "http://localhost:5000/api";
 
 const App = () => {
   return (
